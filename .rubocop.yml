@@ -1,0 +1,96 @@
+AllCops:
+  TargetRubyVersion: 2.4
+  DisplayCopNames: true
+  UseCache: true
+  CacheRootDirectory: ./tmp
+  Include:
+    - 'lib/**/*.rb'
+  Exclude:
+    - 'bin/**/*'
+    - 'test/**/*'
+
+Rails:
+  Enabled: true
+
+Bundler/OrderedGems:
+  Enabled: false
+
+Style/RegexpLiteral:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/CaseIndentation:
+  Enabled: false
+
+Style/PredicateName:
+  Enabled: false
+
+Style/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+
+Style/IndentArray:
+  EnforcedStyle: consistent
+
+Style/EmptyLinesAroundBlockBody:
+  Enabled: false
+
+Style/EmptyLinesAroundModuleBody:
+  Enabled: false
+
+Style/EmptyLinesAroundMethodBody:
+  Enabled: false
+
+Style/EmptyLinesAroundClassBody:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/HashSyntax:
+  EnforcedStyle: no_mixed_keys
+
+Style/OptionalArguments:
+  Enabled: false
+
+Style/Attr:
+  Enabled: false
+
+Style/Lambda:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/LineLength:
+  Description: 'Limit lines to 200 characters.'
+  Max: 200
+  Enabled: true
+
+Metrics/ModuleLength:
+  Max: 1000
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/ParameterLists:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Lint/UnusedMethodArgument:
+  Enabled: false
+
+Lint/UnusedBlockArgument:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false

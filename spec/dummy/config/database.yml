@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: <%= ENV.fetch('POSTGRES_USER', 'nate') %>
+  password: <%= ENV.fetch('POSTGRES_PASSWORD', '') %>
+  host: <%= ENV.fetch('POSTGRES_HOST', '127.0.0.1') %>
+
+development:
+  <<: *default
+  database: heimdallr_development
+
+test:
+  <<: *default
+  database: heimdallr_test
+
+production:
+  <<: *default
+  database: heimdallr_production

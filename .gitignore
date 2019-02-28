@@ -1,0 +1,17 @@
+/.bundle
+/.yardoc
+/Gemfile.lock
+/_yardoc
+/coverage
+/doc
+/pkg
+/coverage
+/spec/reports
+/spec/db
+/tmp
+/.idea
+/doc
+
+.rspec_status
+
+.DS_Store

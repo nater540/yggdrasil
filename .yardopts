@@ -1,0 +1,5 @@
+--no-private --protected app/**/*.rb lib/**/*.rb
+--embed-mixin ClassMethods
+--markup-provider=redcarpet
+--markup=markdown
+--readme README.md
